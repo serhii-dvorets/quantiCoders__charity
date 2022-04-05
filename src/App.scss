@@ -1,3 +1,20 @@
-.starter {
-  font-size: 18px;
+@import './styles/utils/cssReset';
+@import './styles/utils/mixins';
+@import './styles/startPage.scss';
+@import './styles/form.scss';
+@import './styles/animation.scss';
+@import './styles/fonts.scss';
+@import './styles/individual.scss';
+@import './styles/container.scss';
+@import './styles/grid.scss';
+@import './styles/payment.scss';
+@import './styles/title.scss';
+
+body {
+  font-family: Geometria, serif;
+  background-color: rgba(110, 119, 150, 0.849);
+}
+
+.app {
+  min-height: 100vh;
 }

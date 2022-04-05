@@ -1,0 +1,20 @@
+.start-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgb(36, 35, 35);
+    color: rgb(36, 35, 35);
+    font-size: 24px;
+    cursor: pointer;
+  }
+}

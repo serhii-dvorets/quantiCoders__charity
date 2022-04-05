@@ -1,0 +1,72 @@
+.individual {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 48px;
+
+  @include onDesktop {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__inputs-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__input-container {
+    display: flex;
+    flex-direction: column;
+
+    &--file-container {
+      position: relative;
+    }
+
+    &--short {
+      width: 100%;
+      margin-right: 26px;
+
+      &-single {
+        width: 47%;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__label {
+    display: flex;
+    font-size: 17.5px;
+    color: rgb(179, 181, 187);
+  }
+
+  &__input {
+    padding-left: 20px;
+    display: flex;
+    border-radius: 5px;
+    height: 50px;
+    background-color: rgb(241, 243, 252);
+    margin-bottom: 46px;
+  }
+
+  &__file {
+    position: absolute;
+    opacity: 0;
+
+    &-label {
+      font-size: 18px;
+      display: flex;
+      top: 70px;
+      left: 70%;
+      position: absolute;
+      cursor: pointer;
+      color: rgb(26, 154, 240);
+
+      @include onDesktop {
+        top: 37px;
+        left: 110%;
+      }
+    }
+  }
+}

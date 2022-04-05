@@ -1,0 +1,55 @@
+.form {
+  min-height: 100vh;
+  margin: 125px 65px 0;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgb(36, 35, 35);
+
+  &__title {
+    letter-spacing: -0.5px;
+    font-size: 81px;
+    padding-top: 60px;
+  }
+
+  &__close-button {
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 75px;
+    background: url("../img/icons/closeCross.svg") center no-repeat;
+  }
+
+  &__switcher {
+    padding: 24px 0 0 49px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  &__link-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 143px;
+    height: 50px;
+    border: 3px solid rgb(70, 70, 102);
+    font-size: 18px;
+    color: rgb(70, 70, 102);
+    background-color: #fff;
+
+    &--left {
+      border-radius: 6px 0 0 6px;
+    }
+
+    &--right {
+      border-radius: 0 6px 6px 0;
+    }
+  }
+}
+
+.active {
+  background-color: rgb(70, 70, 102);
+  color: #fff;
+}

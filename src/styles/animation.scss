@@ -1,0 +1,12 @@
+.animation {
+  transition: all 0.2s ease 0s;
+  perspective: 100px;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}

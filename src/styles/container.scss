@@ -1,0 +1,7 @@
+.container {
+  margin: 0 5rem 0 5rem;
+
+  @include onDesktop {
+    margin: 0 5rem 0 12.2rem;
+  }
+}

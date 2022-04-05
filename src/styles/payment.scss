@@ -1,0 +1,70 @@
+.payment {
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__title {
+    letter-spacing: -0.5px;
+    font-size: 81px;
+  }
+
+  &__subtitle {
+    padding: 10px 0 50px;
+    letter-spacing: -2px;
+    font-size: 25px;
+  }
+
+  &__item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include onDesktop {
+      flex-direction: row;
+    }
+  }
+
+  &__item-logo {
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    @include onDesktop {
+      height: 100px;
+      width: 100px;
+    }
+    margin-right: 20px;
+
+    &--hand {
+      background: url("../img/icons/handScreen.png") center/contain no-repeat;
+    }
+
+    &--wallet {
+      background: url("../img/icons/walletScreen.png") center/contain no-repeat;
+    }
+
+    &--clothes {
+      background: url("../img/icons/clothesScreen.png") center/contain no-repeat;
+    }
+
+    &--heart {
+      background: url("../img/icons/heartScreen.png") center/contain no-repeat;
+    }
+  }
+
+  &__item-text {
+    color: rgb(190, 198, 209);
+    font-size: 16px;
+
+    @include onDesktop {
+      font-size: 22px;
+    }
+    max-width: 150px;
+  }
+}
+
+.active-type {
+  color: rgb(70, 70, 102);
+}
